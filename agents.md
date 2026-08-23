@@ -12,9 +12,20 @@
 
 ---
 
-## 🎨 設計風格與字體系統 (Design Styles & Typography Systems)
+## 📌 Pinterest & 全球設計靈感檢索系統 (Design Inspiration & Trends)
 
-為滿足各種不同氛圍與期待，本專案建置多元字體與視覺風格庫：
+為保持設計的前沿度與豐富度，本工作站導入 **Pinterest (www.pinterest.com)** 與全球設計大賽 (Behance / Dribbble / Designspiration) 的靈感庫：
+
+1. **主題關鍵字檢索 (Keywords Curation)：**
+   - 範例：`Taiwanese temple graphic design`, `Vintage Asian badge logo`, `Modern typography poster`, `Streetwear t-shirt layout`, `Japanese minimalist print`.
+2. **版面 layout 與配色採集 (Composition & Color Palette)：**
+   - 從 Pinterest 採集最新的網格排版、字體層級 (Hierarchy)、色塊分割與復古質感。
+3. **動態適配不同風格與期待：**
+   - 無論使用者期待「宮廟潮牌」、「美式復古」、「日系雜誌風」還是「極簡國際風」，皆可檢索 Pinterest 最新趨勢並融入設計產出。
+
+---
+
+## 🎨 設計風格與字體系統 (Design Styles & Typography Systems)
 
 ### 1. 傳統廟宇與東方文創 (Taiwanese Temple & Traditional Oriental)
 - **視覺風格：** 宮廟官印、平安符符籤、祥雲錦紋、金石篆刻、朱砂紅/金/靛青配色。
@@ -65,5 +76,5 @@
 
 ## 工作約定
 - 任何 Agent、任何電腦：**開工先讀 `handoff.md`，收工必更新 `handoff.md`**
-- 根據使用者提出的平面設計類別（宣傳品、文宣、看板、Logo 等）靈活切換風格與字體
+- 根據使用者提出的平面設計需求，結合 Pinterest 與全球設計靈感進行風格檢索與視覺產出
 - 所有回應與文件使用繁體中文
