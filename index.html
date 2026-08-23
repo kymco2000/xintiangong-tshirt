@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>信天宮 朱府千歲紀念服 - 三款設計初稿線上展示頁面</title>
+    <title>信天宮 朱府千歲紀念服 - 三款設計初稿與印刷檔展示</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
         
@@ -28,7 +28,6 @@
             line-height: 1.6;
         }
 
-        /* 頁首 Header */
         header {
             background: linear-gradient(135deg, #8b1d1d 0%, #b32a2a 100%);
             color: white;
@@ -57,7 +56,6 @@
             padding: 0 15px;
         }
 
-        /* 印刷規範說明列 */
         .spec-banner {
             background-color: var(--card-bg);
             border-left: 6px solid var(--primary-color);
@@ -92,7 +90,6 @@
             color: #b32a2a;
         }
 
-        /* 風格切換 Tab */
         .tab-menu {
             display: flex;
             justify-content: center;
@@ -124,7 +121,6 @@
             box-shadow: 0 4px 10px rgba(179, 42, 42, 0.3);
         }
 
-        /* 風格內容區塊 */
         .style-content {
             display: none;
             background-color: var(--card-bg);
@@ -161,7 +157,6 @@
             font-size: 1.05rem;
         }
 
-        /* 前後對照 Grid */
         .mockup-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -198,30 +193,44 @@
             margin-top: 10px;
         }
 
-        /* 下載專區 */
         .download-banner {
             margin-top: 40px;
             text-align: center;
             background-color: #fff;
-            padding: 25px;
+            padding: 30px 20px;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
         }
 
         .btn-pdf {
             display: inline-block;
             background-color: var(--primary-color);
             color: white;
-            padding: 12px 30px;
+            padding: 12px 26px;
             text-decoration: none;
             border-radius: 6px;
             font-weight: 700;
-            font-size: 1.1rem;
-            transition: background 0.2s;
+            font-size: 1.05rem;
         }
 
-        .btn-pdf:hover {
-            background-color: #8c1e1e;
+        .btn-zip {
+            display: inline-block;
+            background-color: #2b7a4b;
+            color: white;
+            padding: 12px 26px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 1.05rem;
         }
 
         footer {
@@ -237,12 +246,11 @@
 
     <header>
         <h1>⛩️ 信天宮 朱府千歲紀念服</h1>
-        <p>短袖上衣圖案設計 - 三款初稿線上展示指示書</p>
+        <p>短袖上衣圖案設計 - 線上展示與印刷完稿包下載</p>
     </header>
 
     <div class="container">
 
-        <!-- 印刷規範說明區 -->
         <div class="spec-banner">
             <h3>📐 團體服標準印刷規範</h3>
             <div class="spec-grid">
@@ -257,14 +265,12 @@
             </div>
         </div>
 
-        <!-- 風格切換 Tab -->
         <div class="tab-menu">
             <button class="tab-btn active" onclick="switchTab('style1')">方案一：台灣廟宇文創風</button>
             <button class="tab-btn" onclick="switchTab('style2')">方案二：親民 Q 版書法風</button>
             <button class="tab-btn" onclick="switchTab('style3')">方案三：復古圓形徽章風</button>
         </div>
 
-        <!-- 方案一展示 -->
         <div id="style1" class="style-content active">
             <div class="style-header">
                 <h2>方案一：台灣廟宇文創風 (Taiwanese Temple Cultural Style)</h2>
@@ -284,7 +290,6 @@
             </div>
         </div>
 
-        <!-- 方案二展示 -->
         <div id="style2" class="style-content">
             <div class="style-header">
                 <h2>方案二：親民 Q 版書法風 (Chibi Calligraphy Style)</h2>
@@ -304,7 +309,6 @@
             </div>
         </div>
 
-        <!-- 方案三展示 -->
         <div id="style3" class="style-content">
             <div class="style-header">
                 <h2>方案三：復古圓形徽章風 (Classic Temple Badge Style)</h2>
@@ -324,17 +328,20 @@
             </div>
         </div>
 
-        <!-- PDF 下載專區 -->
+        <!-- 印刷廠交付專區 -->
         <div class="download-banner">
-            <h3>📄 完稿指示書下載</h3>
-            <p>包含完整對照規格與高解析圖片，方便直接下載或發送印刷廠備稿。</p>
-            <a href="信天宮_朱府千歲紀念服_三款初稿與完稿指示書.pdf" class="btn-pdf" download>下載 PDF 完稿指示書</a>
+            <h3>🏭 印刷廠完稿與輸出圖檔下載專區</h3>
+            <p>已針對直噴/網版印刷完成 300 DPI 高解析去背處理 (透明背景 PNG)，點擊下方按鈕即可直接下載完稿包：</p>
+            <div class="btn-group">
+                <a href="factory_print_pack_300dpi.zip" class="btn-zip" download>📦 下載 300 DPI 印刷廠完稿去背圖包 (ZIP)</a>
+                <a href="信天宮_朱府千歲紀念服_三款初稿與完稿指示書.pdf" class="btn-pdf" download>📄 下載兩頁式 PDF 完稿指示書</a>
+            </div>
         </div>
 
     </div>
 
     <footer>
-        信天宮 朱府千歲紀念服設計專案 | 線上初稿展示指示頁
+        信天宮 朱府千歲紀念服設計專案 | 2026 印刷完稿發送專區
     </footer>
 
     <script>
